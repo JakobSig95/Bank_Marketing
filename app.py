@@ -1,5 +1,6 @@
 import streamlit as st
 import pickle
+from xgboost import XGBRegressor
 
 st.write('Hello')
 
