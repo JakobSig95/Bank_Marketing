@@ -1,6 +1,8 @@
 import streamlit as st
-import pickle
 from xgboost import XGBRegressor
+import pickle
+pickle.dump(scaler, open('scaler.pkl','wb'))
+
 
 <a href="https://colab.research.google.com/github/JakobSig95/Bank_Marketing/blob/main/Final_bank_Marketing.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 ## Importing packages and data
@@ -355,8 +357,7 @@ alt.Chart(vis_data).mark_circle(size=6).encode(
 ).interactive()
 ### Extraction of the files
 
-import pickle
-pickle.dump(scaler, open('scaler.pkl','wb'))
+
 
 
 st.set_page_config(
