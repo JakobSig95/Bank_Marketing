@@ -91,4 +91,4 @@ with st.sidebar:
     
     
 with tab2:
-    text.("hello")
+    st.text("hello")
