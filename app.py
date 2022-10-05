@@ -90,7 +90,7 @@ with st.sidebar:
     "Alpha"
     
 with tab2: 
-       
+
     
 
 # load the model from disk
@@ -98,4 +98,4 @@ with tab2:
 # result = loaded_model.score(X_test, y_test)
 # y_pred = loaded_model.predict(X_test)
 
-#
+
