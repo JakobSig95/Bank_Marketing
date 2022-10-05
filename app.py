@@ -46,13 +46,14 @@ with st.sidebar:
     "Mikkel"
 
 st.header("age distribution")
-st.plotly_chart(data['age'], hist = True, use_container_width=True)
 
-with st.expander("Age "):
-            st.write("""
-               det frinder vi ud af 
-            """)
+import matplotlib.pyplot as plt
+import numpy as np
 
+fig, ax = plt.subplots()
+ax.hist(data['age']rr, bins=20)
+
+st.pyplot(fig)
 
 # load the model from disk
 #loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
