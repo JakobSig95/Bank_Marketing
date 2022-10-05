@@ -1,4 +1,29 @@
 import streamlit as st
+import pandas as pd #Data analysis and processing tool
+import numpy as np #Mathematical functions
+import seaborn as sns #Seaborn plots
+from matplotlib import pyplot as plt #Plot control
+sns.set() #Plot style
+import altair as alt #declarative statistical visualization library
+from vega_datasets import data #declarative statistical visualization library
+%matplotlib inline
+
+from sklearn.preprocessing import LabelEncoder #Predictive data analysis
+from imblearn.under_sampling import NearMiss #Class to perform under-sampling
+from scipy import stats #Provides more utility functions for optimization, stats and signal processing
+
+
+data = pd.read_csv("https://github.com/JakobSig95/Bank_Marketing/raw/main/bank_marketing.csv", delimiter=';')
+
+# Converting categorical into boolean using get_dummies 
+# Getting the predicted values in terms of 0 and 1
+
+Y = (data['y'] == 'yes')*1
+
+#Getting an overview of the data set/data types
+
+age_distribution= sns.distplot(data['age'], hist = True, color = "#EE3B3B", hist_kws = {'edgecolor':'black'})
+#______________________________________________________________________________________________________________________________
 
 
 ## page stats
