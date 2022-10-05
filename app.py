@@ -85,9 +85,20 @@ with tab1:
 
 with tab2:
 
+    st.text('On this page we would have liked to give the user the option to choose')
+    st.text('between different variables and then the result would be shown in the')
+    st.text('box where we currently only see three 0-numbers.')
+
     model_xgb = pickle.load(open('model_xgb.pkl','rb'))
     res = model_xgb.predict(np.array([[2.4000e+01, 1.3900e+02, 1.4000e+00, 7.0000e+00, 4.9620e+00,5.2281e+03]]))
     st.write(res)
+
+with tab3:
+    
+    st.text('We have made and trained a model to learn general patterns in our dataset')
+    st.text('and we would have represented the data in a more compressed way on this page')
+    st.text('with identifying the related observations with clusters')
+    st.text('it can be seen in the notebook though.')
 
 
 #sns.cuntplot(x = "marital", data = data, ax = ax1)
