@@ -1,3 +1,4 @@
 streamlit
 xgboost
+$ pip install -r
 
