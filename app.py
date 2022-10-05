@@ -29,8 +29,6 @@ st.set_page_config(
     page_title="Bank marketing",
     page_icon="💸")
 
-st.title('Bank marketing predicting the chance of a "yes"')
-
 st.title('Bank Marketing 💸')
 
 tab1, tab2, tab3 = st.tabs(["Exploratory Data Analysis", "Supervised Machine Learning", "Unsupervised Machine Learning"])
@@ -38,7 +36,13 @@ tab1, tab2, tab3 = st.tabs(["Exploratory Data Analysis", "Supervised Machine Lea
 with tab1:
 
     st.header('.')
-    sns.distplot(data['age'], hist = True, color = "#EE3B3B", hist_kws = {'edgecolor':'black'})
+
+    import matplotlib.pyplot as plt
+    
+    import numpy as np
+    fig, ax = plt.subplots()
+    ax.hist(data['age'], bins=20)
+    st.pyplot(fig)
     
 with st.sidebar:
     
@@ -49,12 +53,7 @@ with st.sidebar:
     
     st.header("age distribution")
     
-    import matplotlib.pyplot as plt
     
-    import numpy as np
-    fig, ax = plt.subplots()
-    ax.hist(data['age'], bins=20)
-    st.pyplot(fig)
 
 # load the model from disk
 #loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
