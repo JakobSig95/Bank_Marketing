@@ -1,6 +1,14 @@
+
+#from xgboost import XGBRegressor
+#import pickle
 import streamlit as st
-from xgboost import XGBRegressor
-import pickle
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns; sns.set()
+from matplotlib.patches import ConnectionPatch
+import plotly.express as px
+
 
 ## page stats
 
@@ -9,6 +17,8 @@ st.set_page_config(
     page_icon="💸")
 
 st.title('Bank marketing predicting subscription')
+
+st.title('Bank Marketing 💸')
 
 # load the model from disk
 loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
