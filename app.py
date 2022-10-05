@@ -3,7 +3,7 @@ import pickle
 from xgboost import XGBRegressor
 
 st.set_page_config(
-    page_title="Airbnb Price Prediction",
+    page_title="Bank marketing",
     page_icon="💸")
 
 st.title('Bank marketing predicting subscription')
