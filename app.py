@@ -96,5 +96,5 @@ with tab1:
 # ["age", "duration", "emp.var.rate", "job", "euribor3m", "nr.employed"]
     
 model_xgb = pickle.load(open('model_xgb.pkl','rb'))
-res = model_xgb.predict(array([[2.4000e+01, 1.3900e+02, 1.4000e+00, 7.0000e+00, 4.9620e+00,5.2281e+03]]))
+res = model_xgb.predict(np.array([[2.4000e+01, 1.3900e+02, 1.4000e+00, 7.0000e+00, 4.9620e+00,5.2281e+03]]))
 st.write(res)
