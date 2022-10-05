@@ -2,7 +2,9 @@ import streamlit as st
 import pickle
 from xgboost import XGBRegressor
 
-st.write('Hello')
+st.set_page_config(
+    page_title="Airbnb Price Prediction",
+    page_icon="💸")
 
 # load the model from disk
 loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
