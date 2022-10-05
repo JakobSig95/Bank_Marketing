@@ -91,4 +91,3 @@ with st.sidebar:
     
     
 with tab2:
-    @st.experimental_singleton
