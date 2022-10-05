@@ -1,4 +1,8 @@
+<<<<<<< HEAD
+
+=======
+>>>>>>> 775aa7d96d49b54cf8804e48f9624119f24fca70
 streamlit
 xgboost
-$ pip install -r
+
 
