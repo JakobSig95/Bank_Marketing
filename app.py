@@ -22,16 +22,15 @@ with st.sidebar:
     "Jakob"
     "Mikkel"
 
-with tab2:
-    st.header("Visaulizing how age is distributed in the datase")
-     with col1:
-        st.subheader("age distribution", )
-        st.plotly_chart(age_distribution, use_container_width=True)
-           
-        with st.expander("Age", use_container_width=True):
+    st.header("age distribution")
+    st.plotly_chart(age_distribution, use_container_width=True)
+
+        with st.expander("Age "):
             st.write("""
-               det kigger vi på.
+               det frinder vi ud af 
             """)
+
+
 # load the model from disk
 #loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
 # result = loaded_model.score(X_test, y_test)
