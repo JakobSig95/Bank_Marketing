@@ -4,3 +4,7 @@ seaborn
 plotly
 scikit-learn
 imblearn
+numpy
+xgboost==1.6.2
+streamlit_shap
+
