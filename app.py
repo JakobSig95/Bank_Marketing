@@ -29,15 +29,16 @@ st.set_page_config(
     page_title="Bank marketing",
     page_icon="💸")
 
-st.title('Bank marketing predicting subscription')
+st.title('Bank marketing predicting the chance of a "yes"')
 
 st.title('Bank Marketing 💸')
 
-tab1, tab2, tab3 = st.tabs(["Bansk data", "SML", "UML"])
+tab1, tab2, tab3 = st.tabs(["Exploratory Data Analysis", "Supervised Machine Learning", "Unsupervised Machine Learning"])
 
 with tab1:
 
-    st.header('find text senere ')
+    st.header('.')
+    sns.distplot(age_distribution, use_container_width=True)
     
 with st.sidebar:
     
