@@ -6,7 +6,6 @@ from matplotlib import pyplot as plt #Plot control
 sns.set() #Plot style
 import altair as alt #declarative statistical visualization library
 
-from sklearn.preprocessing import LabelEncoder #Predictive data analysis
 from imblearn.under_sampling import NearMiss #Class to perform under-sampling
 from scipy import stats #Provides more utility functions for optimization, stats and signal processing
 
