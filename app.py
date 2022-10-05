@@ -10,7 +10,7 @@ from imblearn.under_sampling import NearMiss #Class to perform under-sampling
 from scipy import stats #Provides more utility functions for optimization, stats and signal processing
 
 
-data = pd.read_csv("https://github.com/JakobSig95/Super_Bank_Marketing/raw/main/bank_marketing.csv", delimiter=';')
+data = pd.read_csv("https://github.com/JakobSig95/Bank_Marketing/raw/main/bank_marketing.csv", delimiter=';')
 
 # Converting categorical into boolean using get_dummies 
 # Getting the predicted values in terms of 0 and 1
