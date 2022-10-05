@@ -26,7 +26,7 @@ with tab2:
     st.header("Visaulizing how age is distributed in the datase")
      col1, col2 = st.columns(2)
      with col1:
-        st.subheader("Attacks by Gender")
+        st.subheader("")
         st.plotly_chart(gender_fig, use_container_width=True)
            
         with st.expander("Gender"):
