@@ -1,6 +1,6 @@
 import streamlit as st
 import pickle
-from xgboost import XGBRegressor
+from xgboost import XGBClassifier
 from sklearn.preprocessing import StandardScaler
 import pandas as pd #Data analysis and processing tool
 import numpy as np #Mathematical functions
