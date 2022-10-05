@@ -26,12 +26,12 @@ with tab2:
     st.header("Visaulizing how age is distributed in the datase")
      col1, col2 = st.columns(2)
      with col1:
-        st.subheader("")
-        st.plotly_chart(gender_fig, use_container_width=True)
+        st.subheader("age distribution", )
+        st.plotly_chart(age_distribution, use_container_width=True)
            
-        with st.expander("Gender"):
+        with st.expander("Age", use_container_width=True):
             st.write("""
-                Males seems to be the optimal choice for dinner compared to females.
+               det kigger vi på.
             """)
 # load the model from disk
 #loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
