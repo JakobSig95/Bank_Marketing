@@ -17,7 +17,7 @@ with tab1:
     st.header('find text senere ')
 
 with st.sidebar:
-    "Made by"
+    "Made by:"
     "Alpha"
     "Jakob"
     "Mikkel"
