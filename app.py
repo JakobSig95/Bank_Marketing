@@ -40,11 +40,11 @@ with tab1:
     st.header('find text senere ')
     
  with st.sidebar:
-   
+    
     "Made by:"
-    "Alpha"
-    "Jakob"
     "Mikkel"
+    "Jakob"
+    "Alpha"
     
     st.header("age distribution")
     
