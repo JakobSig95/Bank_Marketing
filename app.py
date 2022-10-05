@@ -90,5 +90,5 @@ with st.sidebar:
     "Alpha"
     
     
-tab2
-st.write ("hello")
+with tab2:
+    st.text('hello')
