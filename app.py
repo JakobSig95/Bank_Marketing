@@ -1,6 +1,3 @@
-
-#from xgboost import XGBRegressor
-#import pickle
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -19,6 +16,8 @@ st.set_page_config(
 st.title('Bank marketing predicting subscription')
 
 st.title('Bank Marketing 💸')
+
+tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Gender and fatality", "Attacks around the world", "Activities and year"])
 
 # load the model from disk
 loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
