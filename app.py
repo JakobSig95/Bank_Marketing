@@ -19,7 +19,7 @@ Y = (data['y'] == 'yes')*1
 
 #Getting an overview of the data set/data types
 
-age_distribution= sns.distplot(data['age'], hist = True, color = "#EE3B3B", hist_kws = {'edgecolor':'black'})
+age_distribution = sns.distplot(data['age'], hist = True, color = "#EE3B3B", hist_kws = {'edgecolor':'black'})
 #______________________________________________________________________________________________________________________________
 
 
@@ -38,7 +38,7 @@ tab1, tab2, tab3 = st.tabs(["Exploratory Data Analysis", "Supervised Machine Lea
 with tab1:
 
     st.header('.')
-    sns.distplot(age_distribution, use_container_width=True)
+    sns.distplot(data['age'], hist = True, color = "#EE3B3B", hist_kws = {'edgecolor':'black'})
     
 with st.sidebar:
     
