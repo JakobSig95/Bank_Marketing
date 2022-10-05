@@ -93,4 +93,4 @@ with st.sidebar:
     "Alpha"
     
     
-@st.experimental_singleton
+def read_objects():
