@@ -10,11 +10,6 @@ st.set_page_config(
 
 st.title('Bank marketing predicting subscription')
 
-from PIL import Image
-image = Image.open('bank.jpg')
-st.image(image, caption='Overview of sales')
-
-
 # load the model from disk
 loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
 # result = loaded_model.score(X_test, y_test)
