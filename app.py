@@ -51,7 +51,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 fig, ax = plt.subplots()
-ax.hist(data['age']rr, bins=20)
+ax.hist(data['age'], bins=20)
 
 st.pyplot(fig)
 
