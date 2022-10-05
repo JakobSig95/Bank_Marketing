@@ -14,7 +14,7 @@ st.title('Bank Marketing 💸')
 tab1, tab2, tab3 = st.tabs(["Bansk data", "SML", "UML"])
 
 # load the model from disk
-loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
+#loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
 # result = loaded_model.score(X_test, y_test)
 # y_pred = loaded_model.predict(X_test)
 
