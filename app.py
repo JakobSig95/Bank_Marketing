@@ -16,6 +16,11 @@ tab1, tab2, tab3 = st.tabs(["Bansk data", "SML", "UML"])
 with tab1:
     st.header('find text senere ')
 
+with st.sidebar:
+    "Made by"
+    "Alpha"
+    "Jakob"
+    "Mikkel"
 # load the model from disk
 #loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
 # result = loaded_model.score(X_test, y_test)
