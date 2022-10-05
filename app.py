@@ -24,7 +24,7 @@ with st.sidebar:
 
 with tab2:
     st.header("Visaulizing how age is distributed in the datase")
-     col1, col2 = st.columns(2)
+     col1, col2 = st.columns(1)
      with col1:
         st.subheader("age distribution", )
         st.plotly_chart(age_distribution, use_container_width=True)
