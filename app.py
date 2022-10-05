@@ -91,4 +91,5 @@ with st.sidebar:
     
     
 with tab2:
-    st.write('hello')
+    @st.experimental_singleton
+    
