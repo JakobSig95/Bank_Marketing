@@ -77,8 +77,6 @@ with tab2:
     st.write(res)
 
 
-n_hood = st.selectbox('Select variables', options=data_1.categories_[0])
-
 #sns.cuntplot(x = "marital", data = data, ax = ax1)
 #ax1.set_title("marital status distribution", fontsize = 13)
 #ax1.set_xlabel("Marital Status", fontsize = 12)
