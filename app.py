@@ -39,7 +39,7 @@ with tab1:
 
     st.header('find text senere ')
     
- with st.sidebar:
+with st.sidebar:
     
     "Made by:"
     "Mikkel"
