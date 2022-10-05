@@ -23,8 +23,8 @@ with st.sidebar:
     "Jakob"
     "Mikkel"
 
-    st.header("age distribution")
-    st.plotly_chart(age_distribution, use_container_width=True)
+st.header("age distribution")
+st.plotly_chart(age_distribution, use_container_width=True)
 
 with st.expander("Age "):
             st.write("""
