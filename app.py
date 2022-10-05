@@ -5,11 +5,11 @@ pickle.dump(scaler, open('scaler.pkl','wb'))
 
 
 ## Importing packages and data
-pip install xgboost -U -q #Machine learning packages - Checking for previous versions, drops it and installs the newest
-pip install sklearn -U -q #Machine learning packages - Checking for previous versions, drops it and installs the newest
+!pip install xgboost -U -q #Machine learning packages - Checking for previous versions, drops it and installs the newest
+!pip install sklearn -U -q #Machine learning packages - Checking for previous versions, drops it and installs the newest
 
-pip install pydeck -q #Interactive data visualization - Checking for previous versions, drops it and installs the newest
-pip install folium #Geoplotting
+!pip install pydeck -q #Interactive data visualization - Checking for previous versions, drops it and installs the newest
+!pip install folium #Geoplotting
 import pandas as pd #Data analysis and processing tool
 import numpy as np #Mathematical functions
 import seaborn as sns #Seaborn plots
