@@ -91,12 +91,12 @@ with tab2:
 #ax2.set_ylabel("Count", fontsize = 12)
 #ax2.set_xticklabels(ax2.get_xticklabels(), rotation = 70)
     
-#with st.sidebar:
+with st.sidebar:
     
- #   "Made by:"
-  #  "Mikkel"
-   # "Jakob"
-    #"Alpha"
+    "Made by:"
+    "Mikkel"
+    "Jakob"
+    "Alpha"
 
 
 # ["age", "duration", "emp.var.rate", "job", "euribor3m", "nr.employed"]
