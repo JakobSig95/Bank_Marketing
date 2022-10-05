@@ -5,8 +5,6 @@ import seaborn as sns #Seaborn plots
 from matplotlib import pyplot as plt #Plot control
 sns.set() #Plot style
 import altair as alt #declarative statistical visualization library
-from vega_datasets import data #declarative statistical visualization library
-
 
 from sklearn.preprocessing import LabelEncoder #Predictive data analysis
 from imblearn.under_sampling import NearMiss #Class to perform under-sampling
