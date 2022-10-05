@@ -65,7 +65,7 @@ with tab1:
 
     import plotly.express as px
     mlabels=['basic 4y', 'high school','basic 6y','basic 9y','profesional course','unknown','university degree']
-    educational_fig = px.pie(Mydata, names=mlabels,values='size',hole = 0.8)
+    educational_fig = px.pie(data, names=mlabels,values='size',hole = 0.8)
     educational_fig.update_traces(textposition='outside', textinfo='percent+label')
     educational_fig.update_layout(
     annotations=[dict(text="comparison of education", x=0.5, y=0.5, font_size=20, showarrow=False)])
