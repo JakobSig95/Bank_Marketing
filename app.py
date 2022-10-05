@@ -35,8 +35,9 @@ tab1, tab2, tab3 = st.tabs(["Exploratory Data Analysis", "Supervised Machine Lea
 
 with tab1:
 
-    st.text('Here is a chart showing the age distribution which we can see is right-skewed but besides from the outliers')
-    ('have a fairly normal distribution from the ages of 20-61')
+    st.text('Here is a chart showing the age distribution which we can see is right-skewed') 
+    st.text('but besides from the outliers have a fairly normal distribution from the ages')
+    st.text('of 20-61')
 
     import matplotlib.pyplot as plt
     
