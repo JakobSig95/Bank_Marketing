@@ -26,7 +26,7 @@ with st.sidebar:
     st.header("age distribution")
     st.plotly_chart(age_distribution, use_container_width=True)
 
-        with st.expander("Age "):
+with st.expander("Age "):
             st.write("""
                det frinder vi ud af 
             """)
