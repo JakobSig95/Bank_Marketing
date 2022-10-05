@@ -15,8 +15,8 @@ tab1, tab2, tab3 = st.tabs(["Bansk data", "SML", "UML"])
 
 with tab1:
     st.header('find text senere ')
-
-with st.sidebar:
+    
+    with st.sidebar:
     "Made by:"
     "Alpha"
     "Jakob"
