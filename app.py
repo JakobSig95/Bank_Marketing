@@ -67,6 +67,10 @@ with tab1:
     ax.hist(data['job'], bins=20)
     st.pyplot(fig)
 
+tab 2
+
+st.write hello
+
 #sns.countplot(x = "marital", data = data, ax = ax1)
 #ax1.set_title("marital status distribution", fontsize = 13)
 #ax1.set_xlabel("Marital Status", fontsize = 12)
