@@ -7,6 +7,7 @@ st.set_page_config(
     page_icon="💸")
 
 st.title('Bank marketing predicting subscription')
+data.info
 
 # load the model from disk
 loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
