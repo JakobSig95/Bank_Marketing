@@ -20,6 +20,12 @@ Y = (data['y'] == 'yes')*1
 #Getting an overview of the data set/data types
 
 age_distribution = sns.distplot(data['age'], hist = True, color = "#EE3B3B", hist_kws = {'edgecolor':'black'})
+
+# Visualizing how Maritial Status and Education is distributed in the dataset.
+
+fig, (ax1, ax2) = plt.subplots(nrows = 1, ncols = 2, figsize = (13, 5))
+
+
 #______________________________________________________________________________________________________________________________
 
 
@@ -45,6 +51,21 @@ with tab1:
     fig, ax = plt.subplots()
     ax.hist(data['age'], bins=20)
     st.pyplot(fig)
+
+    # First plot for marital status
+
+sns.countplot(x = "marital", data = data, ax = ax1)
+ax1.set_title("marital status distribution", fontsize = 13)
+ax1.set_xlabel("Marital Status", fontsize = 12)
+ax1.set_ylabel("Count", fontsize = 12)
+
+# Second plot for Education distribution
+
+sns.countplot(x = "education", data = data, ax = ax2)
+ax2.set_title("Education distribution", fontsize = 13)
+ax2.set_xlabel("Education level", fontsize = 12)
+ax2.set_ylabel("Count", fontsize = 12)
+ax2.set_xticklabels(ax2.get_xticklabels(), rotation = 70)
     
 with st.sidebar:
     
