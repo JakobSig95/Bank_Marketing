@@ -1,11 +1,6 @@
 import streamlit as st
 from xgboost import XGBRegressor
 import pickle
-!pip install xgboost -U -q #Machine learning packages - Checking for previous versions, drops it and installs the newest
-!pip install sklearn -U -q #Machine learning packages - Checking for previous versions, drops it and installs the newest
-
-!pip install pydeck -q #Interactive data visualization - Checking for previous versions, drops it and installs the newest
-!pip install folium #Geoplotting
 
 ## page stats
 
