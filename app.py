@@ -51,7 +51,6 @@ with st.sidebar:
     "Jakob"
     "Alpha"
     
-    st.header("age distribution")
     
     
 
