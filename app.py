@@ -46,7 +46,7 @@ with st.sidebar:
     "Mikkel"
 
 st.header("age distribution")
-st.plotly_chart(age_distribution, use_container_width=True)
+st.plotly_chart(ata['age'], hist = True, use_container_width=True)
 
 with st.expander("Age "):
             st.write("""
