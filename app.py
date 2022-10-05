@@ -4,7 +4,6 @@ import pickle
 pickle.dump(scaler, open('scaler.pkl','wb'))
 
 
-<a href="https://colab.research.google.com/github/JakobSig95/Bank_Marketing/blob/main/Final_bank_Marketing.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 ## Importing packages and data
 !pip install xgboost -U -q #Machine learning packages - Checking for previous versions, drops it and installs the newest
 !pip install sklearn -U -q #Machine learning packages - Checking for previous versions, drops it and installs the newest
@@ -358,7 +357,7 @@ alt.Chart(vis_data).mark_circle(size=6).encode(
 ### Extraction of the files
 
 
-## page stats her
+## page stats
 
 st.set_page_config(
     page_title="Bank marketing",
