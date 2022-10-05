@@ -39,21 +39,20 @@ with tab1:
 
     st.header('find text senere ')
     
-with st.sidebar:
+    with st.sidebar:
     "Made by:"
     "Alpha"
     "Jakob"
     "Mikkel"
-
-st.header("age distribution")
-
-import matplotlib.pyplot as plt
-import numpy as np
-
-fig, ax = plt.subplots()
-ax.hist(data['age'], bins=20)
-
-st.pyplot(fig)
+    
+    st.header("age distribution")
+    
+    import matplotlib.pyplot as plt
+    
+    import numpy as np
+    fig, ax = plt.subplots()
+    ax.hist(data['age'], bins=20)
+    st.pyplot(fig)
 
 # load the model from disk
 #loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
