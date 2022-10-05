@@ -1,4 +1,10 @@
 streamlit
 xgboost
-
-
+pandas
+numpy
+seaborn
+matplotlib
+altair
+folium
+pydeck
+scipy
