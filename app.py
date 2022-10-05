@@ -63,15 +63,6 @@ with tab1:
     axx.hist(data['education'], bins=20)
     st.pyplot(fig)
 
-    import plotly.express as px
-    mlabels=['basic 4y', 'high school','basic 6y','basic 9y','profesional course','unknown','university degree']
-    educational_fig = px.pie(data, names=mlabels,values='size',hole = 0.8)
-    educational_fig.update_traces(textposition='outside', textinfo='percent+label')
-    educational_fig.update_layout(
-    annotations=[dict(text="comparison of education", x=0.5, y=0.5, font_size=20, showarrow=False)])
-    educational_fig.update_layout(showlegend=False)
-    educational_fig.update_layout(height=500, width=600)
-
 #sns.countplot(x = "marital", data = data, ax = ax1)
 #ax1.set_title("marital status distribution", fontsize = 13)
 #ax1.set_xlabel("Marital Status", fontsize = 12)
