@@ -93,7 +93,8 @@ with tab1:
     #"Alpha"
 
 
-["age", "duration", "emp.var.rate", "job", "euribor3m", "nr.employed"]
+# ["age", "duration", "emp.var.rate", "job", "euribor3m", "nr.employed"]
     
 model_xgb = pickle.load(open('model_xgb.pkl','rb'))
-model_xgb.preditc(np.array(56, 261, 1.1	, 'housemaid', 4.857, 5191.0))
+res = model_xgb.preditc(np.array(56, 261, 1.1	, 'housemaid', 4.857, 5191.0))
+st.write(res)
