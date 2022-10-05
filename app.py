@@ -1,10 +1,4 @@
 import streamlit as st
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns; sns.set()
-from matplotlib.patches import ConnectionPatch
-import plotly.express as px
 
 
 ## page stats
@@ -17,7 +11,7 @@ st.title('Bank marketing predicting subscription')
 
 st.title('Bank Marketing 💸')
 
-tab1, tab2, tab3, tab4 = st.tabs(["Introduction", "Gender and fatality", "Attacks around the world", "Activities and year"])
+tab1, tab2, tab3 = st.tabs(["Bansk data", "SML", "UML"])
 
 # load the model from disk
 loaded_model = pickle.load(open('model_xgb.pkl', 'rb'))
