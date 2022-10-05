@@ -76,7 +76,7 @@ with tab2:
     res = model_xgb.predict(np.array([[2.4000e+01, 1.3900e+02, 1.4000e+00, 7.0000e+00, 4.9620e+00,5.2281e+03]]))
     st.write(res)
 
-
+n_hood = st.selectbox('Select variables', options=X_train])
 
 #sns.cuntplot(x = "marital", data = data, ax = ax1)
 #ax1.set_title("marital status distribution", fontsize = 13)
