@@ -72,7 +72,7 @@ with tab1:
 
 
 
-#sns.countplot(x = "marital", data = data, ax = ax1)
+#sns.cuntplot(x = "marital", data = data, ax = ax1)
 #ax1.set_title("marital status distribution", fontsize = 13)
 #ax1.set_xlabel("Marital Status", fontsize = 12)
 #ax1.set_ylabel("Count", fontsize = 12)
@@ -85,12 +85,15 @@ with tab1:
 #ax2.set_ylabel("Count", fontsize = 12)
 #ax2.set_xticklabels(ax2.get_xticklabels(), rotation = 70)
     
-with st.sidebar:
+#with st.sidebar:
     
-    "Made by:"
-    "Mikkel"
-    "Jakob"
-    "Alpha"
+ #   "Made by:"
+  #  "Mikkel"
+   # "Jakob"
+    #"Alpha"
+
+
+["age", "duration", "emp.var.rate", "job", "euribor3m", "nr.employed"]
     
-    
-def read_objects():
+model_xgb = pickle.load(open('model_xgb.pkl','rb'))
+model_xgb.preditc(np.array(56, 261, 1.1	, 'housemaid', 4.857, 5191.0))
