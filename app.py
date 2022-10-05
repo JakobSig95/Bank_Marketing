@@ -56,15 +56,28 @@ with tab1:
     ax.hist(data['age'], bins=20)
     st.pyplot(fig)
 
-    # First plot for marital status
+    st.text('This chart shows the marital distribution, which shows most of the population')
+    st.text('are maried in this case')
 
     fig, axx = plt.subplots()
     axx.hist(data['marital'], bins=20)
     st.pyplot(fig)
 
+    st.text('This chart shows despite the blurry text the education distribution')
+    st.text('which is differentiated between basic.4y, high.school, basic.6y')
+    st.text('basic 9y, professional.course, unknown, university.degree and')
+    st.text('illiterate. The chart shows that there are most people with,')
+    st.text('a high school and a university degree.')
+
     fig, axx = plt.subplots()
     axx.hist(data['education'], bins=20)
     st.pyplot(fig)
+
+    st.text('This chart shows the job count distribution and the categories are')
+    st.text('housemaid, services, administrative, blue-collar, technician,')
+    st.text('retired, management, unemployed, self-employed, unknown entrepeneur')
+    st.text('and student. It shows that the majority are working in administrative,')
+    st.text('blue-collar and technician')
 
     fig, ax = plt.subplots()
     ax.hist(data['job'], bins=20)
