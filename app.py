@@ -1,7 +1,7 @@
 import streamlit as st
 from xgboost import XGBRegressor
 import pickle
-pickle.dump(scaler, open('scaler.pkl','wb'))
+
 
 ## page stats
 
